@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+            android:layout_weight="4"
+        android:scaleType="fitXY"
+        android:src="@drawable/bachground1" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_below="@id/background_image"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="36dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/education_icon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/education" />
+
+                <TextView
+                    android:id="@+id/education_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/education_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:text="Education"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/food_icon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_below="@id/education_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/food" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/food_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="Food PKGs"
+                    android:textColor="@android:color/black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/health_icon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/health" />
+
+                <TextView
+                    android:id="@+id/health_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/health_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:text="Health"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/menu_icon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_below="@id/health_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/others_menu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/menu_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="Others"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/finance_icon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/money" />
+
+                <TextView
+                    android:id="@+id/finance_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/finance_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="24dp"
+                    android:text="Micro-finance"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/projects_icon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_below="@+id/finance_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/donation" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/projects_icon"
+                    android:layout_centerHorizontal="true"
+                    android:text="Projects"
+                    android:textColor="@android:color/black" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/menu_options" />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/menu_ver" />
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Health"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Be engaged"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:id="@+id/old_relative"
+            android:layout_marginTop="56dp">
+            <ProgressBar
+                android:id="@+id/old_cases_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/small_progress_circle"
+                android:max="100"
+                android:progress="65"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:onClick="old_click"
+                />
+            <TextView
+                android:id="@+id/old_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="65.0 %"
+                android:textSize="20sp"
+                android:textColor="@android:color/white" android:fontFamily="sans-serif"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="23dp"
+                android:layout_marginBottom="38dp"/>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/old_text"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Old"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="24dp"
+            android:layout_alignBottom="@+id/old_cases_progress"
+            android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+
+
+    <!--ImageView
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:src="@drawable/star"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="118dp"-->
+    <LinearLayout
+        android:id="@+id/new_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/new_relative"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            >
+        <ProgressBar
+            android:id="@+id/new_cases_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/progress_circle"
+            android:max="100"
+            android:progress="65"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/new_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="65.0 %"
+            android:textColor="@android:color/white" android:fontFamily="sans-serif"
+            android:textSize="38sp"
+            android:clickable="true"
+            android:onClick="new_click"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/new_text"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="New"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+        <RelativeLayout
+            android:id="@+id/closed_relative"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_marginTop="56dp">
+        <ProgressBar
+            android:id="@+id/closed_cases_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/small_progress_circle"
+            android:max="100"
+            android:progress="65"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/closed_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="65.0 %" android:fontFamily="sans-serif"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" android:clickable="true" android:onClick="closed_click"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/closed_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/closed_cases_progress"
+            android:text="Closed"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+

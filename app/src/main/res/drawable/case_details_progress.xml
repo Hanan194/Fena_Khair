@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.9"
+            android:thickness="22dp"
+            android:useLevel="false">
+
+            <solid android:color="#29b6f6" />
+
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <rotate
+            android:fromDegrees="0"
+            android:toDegrees="0">
+            <shape
+                android:innerRadiusRatio="2.9"
+                android:shape="ring"
+                android:thickness="22dp"
+                android:useLevel="true"><!-- this line fixes the issue for lollipop api 21 -->
+
+                <gradient
+                    android:angle="0"
+                    android:endColor="#80deea"
+                    android:startColor="#80deea"
+                    android:type="sweep"
+                    android:useLevel="false" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
